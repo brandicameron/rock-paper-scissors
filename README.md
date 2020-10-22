@@ -1,2 +1,3 @@
-# rock-paper-scissors
-Good ole rock, paper, scissors game.
+![Rock, Paper, Scissors Game](img/rps-share.jpg)
+
+Enjoy a game of good ole rock, paper, scissors.
