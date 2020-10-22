@@ -31,7 +31,6 @@ h1 {
 
 .instructions {
     text-align: center;
-/*    margin: -30px 0 40px 0;*/
     font-size: 1.2rem;
 }
 
@@ -42,7 +41,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-.player-select-btn {
+.player-select-buttons {
     height: 200px;
     width: auto;
     display: flex;
@@ -59,7 +58,7 @@ h1 {
     border: 3px solid black;
     border-radius: 30px;
     margin: 0 5px;
-    box-shadow: 15px 20px 50px -20px rgb(34 34 34 / 70%);
+    box-shadow: 5px 7px rgb(34 34 34 / 20%);
 }
 
 .player-choice:hover {
@@ -153,7 +152,7 @@ h1 {
         top: 80%;
     }
     
-    .player-select-btn {
+    .player-select-buttons {
         margin-top: -30px;
     }
     

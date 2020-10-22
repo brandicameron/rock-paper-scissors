@@ -19,12 +19,9 @@
 
         function playRound() {
             const computerSelection = computerPlay();
-            const displayComputerChoice = document.getElementById('computer');
-            const displayPlayerChoice = document.getElementById('player');
             const displayWinnerBanner = document.getElementById('winner');
             let resultImgComputer = document.querySelector('#computer');
             let resultImgPlayer = document.querySelector('#player');
-            
             
             //display selections
             switch(computerSelection) {
