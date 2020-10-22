@@ -1,0 +1,42 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rock, Paper, Scissors</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Brandi Cameron | hello@brandicameron.com">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <h1>Rock, Paper, Scissors</h1>
+    <p class="instructions">Make your selection to begin:</p>
+
+    <div class="player-select-btn">
+        <img src="./img/rock.png" alt="rock" id="rock" class="player-choice">
+        <img src="./img/paper.png" alt="paper" id="paper" class="player-choice">
+        <img src="./img/scissors.png" alt="scissors" id="scissors" class="player-choice">
+    </div>
+
+    <div class="results">
+        <div class="computer-result result-panels">
+            <div class="players">Computer</div>
+            <div id="computer" class="result-img"></div>
+        </div>
+        <div class="player-result result-panels">
+            <div class="players">Player</div>
+            <div id="player" class="result-img"></div>
+        </div>
+        <div id="winner"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

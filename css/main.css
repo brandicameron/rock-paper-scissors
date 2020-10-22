@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Baloo 2', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    line-height: 100%;
+}
+
+@media screen and (max-width: 350px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+.instructions {
+    text-align: center;
+    margin: -30px 0 40px 0;
+    font-size: 1.2rem;
+}
+
+.players {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.player-select-btn {
+    height: 200px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.player-select-btn > img {
+    max-width: 100px;
+    width: 15vw;
+    min-height: 100px;
+    padding: 20px;
+    background: #fff;
+    border: 3px solid black;
+    border-radius: 30px;
+    margin: 0 5px;
+    box-shadow: 15px 20px 50px -20px rgb(34 34 34 / 70%);
+}
+
+.player-select-btn > img:hover {
+    transform: scale(1.01);
+    transition: transform 100ms linear;
+}
+
+.player-select-btn > img:active {
+    transform: scale(.98);
+    transition: transform 100ms linear;
+}
+
+.results {
+    display: flex;
+    flex: 1;
+    z-index: -1;
+    margin-top: -100px;
+}
+
+.result-panels {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+
+.computer-result {
+    background: #a663cc;
+}
+
+.player-result {
+    background: #70d6ff;
+}
+
+.result-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 105px;
+    height: 110px;
+    visibility: hidden;
+}
+
+.rock-position {
+    visibility: visible;
+    background: url(../img/rock-paper-scissors.png) 15px 0;
+    background-repeat: no-repeat;
+    background-size: 300px;
+}
+
+.paper-position {
+    visibility: visible;
+    background: url(../img/rock-paper-scissors.png) -90px 0;
+    background-repeat: no-repeat;
+    background-size: 300px;
+}
+
+.scissors-position {
+    visibility: visible;
+    background: url(../img/rock-paper-scissors.png) -200px 0;
+    background-repeat: no-repeat;
+    background-size: 300px;
+}
+
+.winner {
+    position: absolute;
+    font-size: 8vw;
+    font-weight: 800;
+    letter-spacing: -.2rem;
+    color: #00d329;
+    opacity: .9;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    top: 75%;
+    text-shadow: 3px 3px #fff;
+}
+
+.winner-player {
+    right: 0;
+}
+
+.winner-tie {
+    left: 25%;
+}
+
+@media screen and (max-width: 550px) {
+    .winner {
+        top: 80%;
+    }
+
+    .player-select-btn > img {
+        min-height: auto;
+    }
+}
